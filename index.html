@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="flex j-between a-center large-11">
+    <header class="flex j-between a-center large-11 mrlauto">
         <div id="logo-smart" class="d-none flex gap a-center">
             <div class="logo-header"><img src="./assets/logo-hydra.png" alt="logo de hydra"></div>
             <div class="nom-header"><img src="./assets/logo-nom-hydra.png" alt="nom de hydra en logo"></div>
@@ -25,93 +25,258 @@
             </div>
             <nav>
                 <ul class="flex gap a-center">
-                    <li><a class="fs12 fw700" href="">ABOUT</a></li>
-                    <li><a class="fs12 fw700" href="">SERVICES</a></li>
-                    <li><a class="fs12 fw700" href="">TECHNOLOGIES</a></li>
-                    <li><a class="fs12 fw700" href="">HOW TO</a></li>
+                    <li><a class="fs12 fw700 c-white" href="">ABOUT</a></li>
+                    <li><a class="fs12 fw700 c-white" href="">SERVICES</a></li>
+                    <li><a class="fs12 fw700 c-white" href="">TECHNOLOGIES</a></li>
+                    <li><a class="fs12 fw700 c-white" href="">HOW TO</a></li>
                 </ul>
             </nav>
             <nav>
                 <ul class="flex gap a-center">
-                    <li><a class="fs12 fw700" href="" class="border">CONTACT US</a></li>
-                    <li><a class="fs12 fw700" href="" class="btn">JOIN HYDRA</a></li>
+                    <li><a class="fs12 fw700 border-white txt-center c-white" href="">CONTACT US</a></li>
+                    <li><a class="fs12 fw700 btn c-purple txt-center" href="">JOIN HYDRA</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section id="hero" class="large-12">
         <div><img src="./assets/courbe-hero.png" alt="courbe dessiné en fond d'écran"></div> <!-- pos absolu -->
-        <div id="titre" class="flex j-between a-center large-11">
+        <div id="titre" class="flex j-between a-center large-11 mrlauto">
             <div id="titre-text" class="large-4">
-                <h1 class="fs40 fw700"><span class="gradient fs46">Dive</span>Into The Depths<br>Of <span class="gradient">Virtual Reality</span></h1>
-                <p class="fs16 fw400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos odit velit temporibus perferendis eveniet blanditiis vel repellat distinctio accusamus reprehenderit neque, magnam aut maiores accusantium odio eligendi deleniti sed iste?</p>
+                <h1 class="fs40 fw700 c-white"><span class="gradient fs46">Dive</span>Into The Depths<br>Of <span class="gradient">Virtual Reality</span></h1>
+                <p class="fs16 fw400 c-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos odit velit temporibus perferendis eveniet blanditiis vel repellat distinctio accusamus reprehenderit neque, magnam aut maiores accusantium odio eligendi deleniti sed iste?</p>
                 <div>
-                    <a href="" class="btn fs12 fw700"></a>
+                    <a href="" class="btn c-purple txt-center fs12 fw700"></a>
                     <div class="picto-fleche-court"><img src="/assets/picto-fleche-court.png" alt="image d'une fleche"></div>
                 </div>
             </div>
-            <div id="titre-img" class="large-4"><img src="./assets//vr-hero.png" alt="photo d'une femme avec un casque VR"></div>
+            <div id="titre-img" class="large-4"><img src="./assets/vr-hero.png" alt="photo d'une femme avec un casque VR"></div>
         </div>
-        <div id="hero-contact" class="flex j-between a-center large-11">
-            <div class="flex a-center j-center large-4">
-                <div class="picto-contact"><img src="./assets/picto-localisation.png" alt="pictogramme localisation"></div>
-                <div>
-                    <h3 class="fs24 fw700">Pay Us a Visit</h3>
-                    <p class="fs14 fw400">Union St, Seattle, WA 98101, United States</p>
+        <!-- Slider main container -->
+        <div id="swiper-contact" class="swiper large-11 mrlauto">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide flex a-center large-4">
+                    <div class="picto-contact"><img src="./assets/picto-localisation.png" alt="pictogramme localisation"></div>
+                    <div>
+                        <h3 class="fs24 fw700 c-white">Pay Us a Visit</h3>
+                        <p class="fs14 fw400 c-white">Union St, Seattle, WA 98101, United States</p>
+                    </div>
+                </div>
+                <div class="swiper-slide flex a-center large-4">
+                    <div class="picto-contact"><img src="./assets/picto-tel.png" alt="pictogramme téléphone"></div>
+                    <div>
+                        <h3 class="fs24 fw700 c-white">Give Us a Call</h3>
+                        <p class="fs14 fw400 c-white">(110) 1111-1010</p>
+                    </div>
+                </div>
+                <div class="swiper-slide flex a-center large-4">
+                    <div class="picto-contact"><img src="./assets/picto-mail.png" alt="pictogramme mail"></div>
+                    <div>
+                        <h3 class="fs24 fw700 c-white">Send Us a Message</h3>
+                        <p class="fs14 fw400 c-white">Contact@HydraVTech.com</p>
+                    </div>
                 </div>
             </div>
-            <div id="contact-middle" class="flex a-center j-center large-4">
-                <div class="picto-contact"><img src="./assets/picto-tel.png" alt="pictogramme téléphone"></div>
-                <div>
-                    <h3 class="fs24 fw700">Give Us a Call</h3>
-                    <p class="fs14 fw400">(110) 1111-1010</p>
-                </div>
-            </div>
-            <div class="flex a-center j-center large-4">
-                <div class="picto-contact"><img src="./assets/picto-mail.png" alt="pictogramme mail"></div>
-                <div>
-                    <h3 class="fs24 fw700">Send Us a Message</h3>
-                    <p class="fs14 fw400">Contact@HydraVTech.com</p>
-                </div>
-            </div>
-        </div>   
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev d-none"></div>
+            <div class="swiper-button-next d-none"></div>
+        </div>  
     </section>
     <section id="intro-about" class="large-12">
-        <div id="intro" class="flex j-between a-center large-11">
+        <div id="intro" class="flex j-between a-center large-11 mrlauto">
             <div id="intro-titre" class="large-4 flex">
-                <h2 class="fs36 fw700 large-12">INTRODUCTION</h2>
-                <p class="fs36 fw300">TO HYDRA VR</p>
-                <img src="./assets/picto-fleche-long.png" alt="image d'une fleche longue">
+                <h2 class="fs36 fw700 large-12 c-white">INTRODUCTION</h2>
+                <p class="fs36 fw300 c-white">TO HYDRA VR</p>
+                <div class="picto-fleche-long"><img src="./assets/picto-fleche-long.png" alt="image d'une fleche longue"></div>
             </div>
-            <p id="intro-desc" class="fs16 fw400 large-6">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
-                nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
-                quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
-                lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+            <p id="intro-desc" class="fs16 fw400 large-6 c-white">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
             </p>
         </div>
-        <div id="about" class="large-12 flex j-between a-center">
+        <div id="about" class="large-11 mrlauto flex j-between a-center">
             <div id="about-img" class="large-4"><img src="./assets/vr-about.png" alt="photo d'un homme avec un casque VR"></div>
             <div id="about-titre-desc" class="large-6">
                 <div id="about-titre">
-                    <h2 class="fs36 fw700">ABOUT</h2>
-                    <p class="fs36 fw300">HYDRA VR</p>
+                    <h2 class="fs36 fw700 c-white">ABOUT</h2>
+                    <p class="fs36 fw300 c-white">HYDRA VR</p>
                 </div>
-                <p id="about-desc" class="fs16 fw400">Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
-                    urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
-                    dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
-                    Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet 
-                    sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam 
-                    etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet 
-                    cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
-                    retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
-                    n tempor.
+                <p id="about-desc" class="fs16 fw400 c-white">Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudin tempor.
                 </p>
-                <a href="" class="fs12 fw700 btn">LET’S GET IN TOUCH</a>
+                <a href="" class="fs12 fw700 btn c-purple txt-center">LET’S GET IN TOUCH</a>
             </div>
         </div>
     </section>
     <section id="why" class="large-12">
-        
+        <div class="large-11 mrlauto flex j-between a-center">
+            <div id="why-titre" class="large-4">
+                <h2 class="fs36 fw700 c-white">WHY BUILD</h2>
+                <p class="fs36 fw300 c-white">WITH HYDRA?</p>
+                <div class="picto-fleche-long"><img src="./assets/picto-fleche-long.png" alt="image d'une fleche longue"></div>
+            </div>
+            <p class="fs16 fw400 large-6 c-white">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+        </div>
+        <!-- Slider main container -->
+        <div id="swipper-why" class="swiper large-11 mrlauto">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div iclass="swiper-slide">
+                    <div class="border-rd"><img src="./assets/vr-simulation.png" alt="photo d'une femme avec casque vr et manette"></div>
+                    <h3 class="fs24 fw700 txt-center c-white">SIMULATION</h3>
+                    <p class="fs12 fw400 c-white">Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                    <a href="" class="btn c-purple txt-center fs12 fw700">TRY IT NOW</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="border-rd"><img src="./assets/vr-education.png" alt="photo d'un homme avec casque vr"></div>
+                    <h3 class="fs24 fw700 txt-center c-white">EDUCATION</h3>
+                    <p class="fs12 fw400 c-white">Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                    <a href="" class="btn c-purple txt-center fs12 fw700">TRY IT NOW</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="border-rd"><img src="./assets/vr-self-care.png" alt="photo d'une femme en méditation avec casque vr"></div>
+                    <h3 class="fs24 fw700 txt-center c-white">SELF-CARE</h3>
+                    <p class="fs12 fw400 c-white">Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                    <a href="" class="btn c-purple txt-center fs12 fw700">TRY IT NOW</a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="border-rd"><img src="./assets/vr-outdoor.png" alt="photo d'un homme en exterieur avec casque vr"></div>
+                    <h3 class="fs24 fw700 txt-center c-white">OUTDOOR</h3>
+                    <p class="fs12 fw400 c-white">Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.</p>
+                    <a href="" class="btn c-purple txt-center fs12 fw700">TRY IT NOW</a>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev d-none"></div>
+            <div class="swiper-button-next d-none"></div>
+        </div>
     </section>
+    <section id="techno" class="large-12">
+        <div id="techno-titre" class="large-11 mrlauto">
+            <h2 class="fs36 fw700 txt-center c-white">TECHNOLOGIES & HARDWARE</h2>
+            <p class="fs36 fw300 txt-center c-white">USED BY HYDRA VR.</p>
+            <p class="fs700 btn c-purple txt-center border-rd">﹀</p>
+        </div>
+        <!-- Slider main container -->
+        <div id="swiper-techno" class="swiper large-11 mrlauto">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <a href="https://www.unrealengine.com/fr" class="swiper-slide"><img src="./assets/logo-unreal.png" alt="logo de Unreal"></a>
+                <a href="https://unity.com/fr" class="swiper-slide"><img src="./assets/logo-unity.png" alt="logo de Unity"></a>
+                <a href="https://about.meta.com/fr/" class="swiper-slide"><img src="./assets/logo-oculus.png" alt="logo de Oculus"></a>
+                <a href="https://www.vive.com/fr/" class="swiper-slide"><img src="./assets/logo-vive.png" alt="logo de Vive"></a>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev d-none"></div>
+            <div class="swiper-button-next d-none"></div>
+        </div>
+    </section>
+    <section id="how" class="large-12">
+        <div class="large-11 mrlauto flex j-between a-center">
+            <div id="how-titre" class="large-4">
+                <h2 class="fs36 fw700 c-white">HOW WE BUILD</h2>
+                <p class="fs36 fw300 c-white">WITH HYDRA VR?</p>
+                <div class="picto-fleche-long"><img src="./assets/picto-fleche-long.png" alt="image d'une fleche longue"></div>
+            </div>
+            <p class="fs16 fw400 large-6 c-white">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.></p>
+        </div>
+        <!-- Slider main container -->
+        <div id="swiper-how" class="swiper large-11 mrlauto">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <p class="fs64 fw700 border-rd c-purple">01</p>
+                    <div>
+                        <div><img src="./assets/picto-fleche-mini.png" alt="image d'une fleche"></div>
+                        <h3 class="fs24 fw700 c-white">3D Conception<br>& Design</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <p class="fs64 fw700 border-rd c-purple">02</p>
+                    <div>
+                        <div><img src="./assets/picto-fleche-mini.png" alt="image d'une fleche"></div>
+                        <h3 class="fs24 fw700 c-white">Interaction<br>Design</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <p class="fs64 fw700 border-rd c-purple">03</p>
+                    <div>
+                        <div><img src="./assets/picto-fleche-mini.png" alt="image d'une fleche"></div>
+                        <h3 class="fs24 fw700 c-white">VR World<br>User Testing</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <p class="fs64 fw700 border-rd c-purple">04</p>
+                    <div>
+                        <div><img src="./assets/picto-fleche-mini.png" alt="image d'une fleche"></div>
+                        <h3 class="fs24 fw700 c-white">Hydra VR<br>Deploy</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev d-none"></div>
+            <div class="swiper-button-next d-none"></div>
+        </div>
+    </section>
+    <section id="form" class="large-12">
+        <div id="form-container" class="large-11 mrlauto">
+            <h2 class="fs36 fw700 txt-center c-white">JOIN HYDRA</h2>
+            <p class="fs36 fw300 txt-center c-white">Let’s Build Your VR Experience</p>
+            <form action="" method="get" class="large-10 mrlauto">
+                <div id="first-last-name" class="flex large-12">
+                    <input class="large-6 border-white c-white" type="text" name="nom" id="nom" placeholder="First Name">
+                    <input class="large-6 border-white c-white" type="text" name="prenom" id="prenom" placeholder="Last Name">
+                </div>
+                <div id="mail-tel" class="flex large-12">
+                    <input class="large-6 border-white c-white" type="email" name="nom" id="email" placeholder="Email">
+                    <input class="large-6 border-white c-white" type="tel" name="tel" id="tel" placeholder="Phone Number">
+                </div>
+                <select class="large-12 border-white c-white" name="subject" id="subject">
+                    <option value="subject">Subject</option>
+                </select>
+                <textarea class="large-12 border-white c-white" name="msg" id="msg" rows="10" placeholder="Tell Us Something..."></textarea>
+                <input class="fs12 fw700 c-purple txt-center mrlauto" type="submit" value="SEND TO HYDRA">
+            </form>
+        </div>
+    </section>
+    <footer class="large-12">
+        <div id="infos">
+            <a id="logo-footer"><img src="./assets/logo-hydra-grand.png" alt="logo de hydra"></a>
+            <nav id="site-map-gauche">
+                <ul>
+                    <li><a class="fs16 fw700 c-white" href="">ABOUT</a></li>
+                    <li><a class="fs16 fw700 c-white" href="">SERVICES</a></li>
+                    <li><a class="fs16 fw700 c-white" href="">TECHNOLOGIES</a></li>
+                    <li><a class="fs16 fw700 c-white" href="">HOW TO</a></li>
+                    <li><a class="fs16 fw700 c-white" href=""></a>JOIN HYDRA</li>
+                </ul>
+            </nav>
+            <nav id="site-map-droite">
+                <ul>
+                    <li><a class="fs16 fw700 c-white" href="">F.A.Q</a></li>
+                    <li><a class="fs16 fw700 c-white" href="">SITEMAP</a></li>
+                    <li><a class="fs16 fw700 c-white" href="">CONDITIONS</a></li>
+                    <li><a class="fs16 fw700 c-white" href="">LICENSES</a></li>
+                </ul>
+            </nav>
+            <div id="reseaux">
+                <h4 class="fs16 fw700">SOCIALIZE WITH HYDRA</h4>
+                <nav>
+                    <ul>
+                        <li><a href=""><img src="./assets/picto-facebook.png" alt="logo de facebook"></a></li>
+                        <li><a href=""><img src="./assets/picto-twitter.png" alt="logo de twitter"></a></li>
+                        <li><a href=""><img src="./assets/picto-linkedin.png" alt="logo de linkedin"></a></li>
+                        <li><a href=""><img src="./assets/picto-youtube.png" alt="logo de youtube"></a></li>
+                        <li><a href=""><img src="./assets/picto-instagram.png" alt="logo de instagram"></a></li>
+                        <li><a href=""><img src="./assets/picto-pinterest.png" alt="logo de pinterest"></a></li>
+                    </ul>
+                </nav>
+                <a href="" class="fs12 fw700 txt-center btn c-purple">BUILD YOUR WORLD</a>
+            </div>
+        </div>
+        <a id="mention">2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED </a>
+    </footer>
 </body>
 </html>
